@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Github, Linkedin, Mail, FileText } from "lucide-react";
@@ -59,8 +58,9 @@ const Navbar = () => {
             ))}
             <Button variant="outline" size="sm" asChild>
               <a 
-                href="/resume.pdf" 
-                download="Sanmay_SR_Resume.pdf"
+                href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
                 <FileText className="w-4 h-4" />
@@ -97,8 +97,9 @@ const Navbar = () => {
               ))}
               <Button variant="outline" size="sm" asChild className="w-full">
                 <a 
-                  href="/resume.pdf" 
-                  download="Sanmay_SR_Resume.pdf"
+                  href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
                 >
                   <FileText className="w-4 h-4" />

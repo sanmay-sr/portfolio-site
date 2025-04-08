@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
@@ -32,8 +31,12 @@ const HeroSection = () => {
           </Button>
           
           <Button variant="outline" size="lg" asChild>
-            <a href="/resume.pdf" download="Sanmay_SR_Resume.pdf">
-              Download Resume
+            <a 
+              href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
             </a>
           </Button>
         </div>

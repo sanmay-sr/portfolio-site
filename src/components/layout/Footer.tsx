@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
@@ -70,10 +69,11 @@ const Footer = () => {
                   <Mail size={20} />
                 </a>
                 <a
-                  href="/resume.pdf"
-                  download="Sanmay_SR_Resume.pdf"
+                  href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary"
-                  aria-label="Download Resume"
+                  aria-label="View Resume"
                 >
                   <FileText size={20} />
                 </a>
