@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npx tsc -p tsconfig.build.json && vite build",
+    "build": "npx tsc && [any other build steps you need]",
     "lint": "eslint .",
     "preview": "vite preview"
   },
