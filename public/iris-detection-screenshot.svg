@@ -1,0 +1,52 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+    <radialGradient id="iris" cx="400" cy="225" r="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="80%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#172554" />
+    </radialGradient>
+    <radialGradient id="pupil" cx="400" cy="225" r="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#gradient)" />
+  
+  <!-- UI Container -->
+  <rect x="50" y="50" width="700" height="350" rx="8" fill="#ffffff20" />
+  
+  <!-- Sidebar Controls -->
+  <rect x="50" y="50" width="180" height="350" rx="8" fill="#ffffff10" />
+  <rect x="70" y="80" width="140" height="30" rx="4" fill="#ffffff30" />
+  <rect x="70" y="130" width="140" height="20" rx="10" fill="#ffffff20" />
+  <rect x="70" y="160" width="140" height="20" rx="10" fill="#ffffff20" />
+  <rect x="70" y="190" width="140" height="20" rx="10" fill="#ffffff20" />
+  <rect x="70" y="230" width="60" height="60" rx="4" fill="#ffffff40" />
+  <rect x="150" y="230" width="60" height="60" rx="4" fill="#ffffff40" />
+  <rect x="70" y="310" width="140" height="40" rx="4" fill="#ffffff30" />
+  
+  <!-- Main Visualization -->
+  <circle cx="400" cy="225" r="120" fill="#ffffff40" />
+  <circle cx="400" cy="225" r="100" fill="url(#iris)" />
+  <circle cx="400" cy="225" r="40" fill="url(#pupil)" />
+  
+  <!-- Measurement Lines -->
+  <line x1="280" y1="225" x2="520" y2="225" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="400" y1="105" x2="400" y2="345" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Data Panel -->
+  <rect x="560" y="80" width="170" height="290" rx="4" fill="#ffffff10" />
+  <rect x="580" y="100" width="130" height="30" rx="4" fill="#ffffff30" />
+  <rect x="580" y="150" width="130" height="20" rx="4" fill="#ffffff20" />
+  <rect x="580" y="180" width="130" height="20" rx="4" fill="#ffffff20" />
+  <rect x="580" y="210" width="130" height="60" rx="4" fill="#ffffff30" />
+  <rect x="580" y="290" width="130" height="60" rx="4" fill="#ffffff20" />
+  
+  <text x="400" y="380" font-family="Arial" font-size="18" text-anchor="middle" fill="white">
+    IRIS-PUPIL Ratio Detection
+  </text>
+</svg> 
