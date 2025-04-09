@@ -24,7 +24,7 @@ const ProjectsSection = () => {
         "A collaborative text editor and note-taking application with real-time synchronization and markdown support.",
       image: "/openpad-screenshot.png",
       imageAlt: "Screenshot of OpenPad collaborative text editor interface",
-      tags: ["Python", "React", "Firebase", "WebSockets"],
+      tags: ["Python", "React", "supabase", "WebSockets"],
       demoLink: "https://openpad-gamma.vercel.app/",
       repoLink: "#",
       repoText: "Codebase available on demand",
