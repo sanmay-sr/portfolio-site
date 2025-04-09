@@ -1,11 +1,14 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Github, Linkedin, Mail, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,19 +42,19 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold text-primary">
+          <Link to="/" className="text-xl sm:text-2xl font-bold text-primary">
             Sanmay S R
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-sm lg:text-base text-foreground hover:text-primary transition-colors"
               >
                 {link.name}
               </a>
@@ -71,20 +74,20 @@ const Navbar = () => {
 
           {/* Mobile Nav Toggle */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground p-1"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Nav Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background border-t">
+        <div className="md:hidden bg-background/95 backdrop-blur-sm border-t animate-fade-in">
           <div className="container mx-auto px-4 py-4">
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -95,7 +98,7 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="outline" size="sm" asChild className="w-full">
+              <Button variant="outline" size="sm" asChild className="w-full mt-1">
                 <a 
                   href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing" 
                   target="_blank"
@@ -107,7 +110,7 @@ const Navbar = () => {
                 </a>
               </Button>
               
-              <div className="flex items-center space-x-4 pt-4 border-t border-muted">
+              <div className="flex items-center space-x-4 pt-3 mt-1 border-t border-muted">
                 <a 
                   href="https://github.com/sanmay-sr" 
                   target="_blank" 
