@@ -2,19 +2,39 @@
 import React from "react";
 import SectionHeading from "@/components/ui/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, BookOpen, Award, Bot, Brain, Users } from "lucide-react";
+import { Code, Brain, BookOpen, Award, Bot, Database, Layers, Eye, Github, Terminal } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
     {
       icon: <Code className="h-8 w-8 text-primary" />,
       title: "Programming",
-      description: "Python, Machine Learning, Deep Learning",
+      description: "Python, TypeScript, JavaScript",
+    },
+    {
+      icon: <Layers className="h-8 w-8 text-primary" />,
+      title: "Web Development",
+      description: "React, Tailwind CSS, Vite",
+    },
+    {
+      icon: <Database className="h-8 w-8 text-primary" />,
+      title: "Backend",
+      description: "Supabase, WebSockets, REST APIs",
+    },
+    {
+      icon: <Eye className="h-8 w-8 text-primary" />,
+      title: "Computer Vision",
+      description: "OpenCV, Image Processing, Object Detection",
     },
     {
       icon: <Brain className="h-8 w-8 text-primary" />,
       title: "AI & ML",
-      description: "Computer Vision, OpenCV, Neural Networks",
+      description: "Deep Learning, Neural Networks, Machine Learning",
+    },
+    {
+      icon: <Terminal className="h-8 w-8 text-primary" />,
+      title: "Development Tools",
+      description: "Git, GitHub, VS Code, Docker",
     },
     {
       icon: <BookOpen className="h-8 w-8 text-primary" />,
@@ -22,19 +42,9 @@ const AboutSection = () => {
       description: "B.E. Info Science & Engineering at RVITM",
     },
     {
-      icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Leadership",
-      description: "RCA President, Lance Corporal in NCC",
-    },
-    {
       icon: <Award className="h-8 w-8 text-primary" />,
       title: "Certifications",
       description: "HarvardX Python, Digital Marketing",
-    },
-    {
-      icon: <Bot className="h-8 w-8 text-primary" />,
-      title: "Interests",
-      description: "Speedcubing, AI Innovation, Problem-solving",
     },
   ];
 
@@ -95,7 +105,7 @@ const AboutSection = () => {
       </div>
 
       <h3 className="text-2xl font-bold mb-6 text-center">Skills & Expertise</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <Card key={index} className="hover:shadow-md transition-shadow">
             <CardContent className="p-6">
