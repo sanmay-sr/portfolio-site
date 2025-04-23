@@ -36,7 +36,7 @@ const HeroSection = () => {
           
           <Button variant="outline" size={isMobile ? "default" : "lg"} asChild className="w-full sm:w-auto mt-3 sm:mt-0">
             <a 
-              href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1-QflTVeZzXVMl-NLoSF6qtSgvm3Wkheh/view?usp=drive_link" 
               target="_blank"
               rel="noopener noreferrer"
             >
