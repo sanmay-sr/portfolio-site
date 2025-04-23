@@ -73,7 +73,7 @@ const Footer = () => {
                   <Mail size={isMobile ? 18 : 20} />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1-QflTVeZzXVMl-NLoSF6qtSgvm3Wkheh/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary"
