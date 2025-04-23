@@ -61,7 +61,7 @@ const Navbar = () => {
             ))}
             <Button variant="outline" size="sm" asChild>
               <a 
-                href="https://drive.google.com/file/d/15dS2xW3M61DeRvqbQu0W9xA1siA93fjY/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1-QflTVeZzXVMl-NLoSF6qtSgvm3Wkheh/view?usp=drive_link" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
